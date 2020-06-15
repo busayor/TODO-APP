@@ -1,17 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import TodoApp from './components/TodoApp';
+import JokeApp from './JokeApp';
+import ProductApp from './ProductApp';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+//This is for the to-do list
+//ReactDOM.render(<TodoApp />, document.getElementById('root'))
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+//This is for the jokes app
+//ReactDOM.render(<JokeApp />, document.getElementById('root'))
+
+//This is for the products app
+ReactDOM.render(<ProductApp />, document.getElementById('root'))
+
+
